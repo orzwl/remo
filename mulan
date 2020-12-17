@@ -1,5 +1,5 @@
 select * from t_gt_dzorderevaluate where F_DRIVERID='e1cd0e13d12a4ed7844b960d80945c58';/*累计司机评价*/
-SELECT AVG(F_DRIVERLEAVEL) FROM t_gt_dzorderevaluate   where F_DRIVERID='e1cd0e13d12a4ed7844b960d80945c58';/*司机平均分*/
+
 select * from t_gt_dzorder  where F_DRIVERID='e1cd0e13d12a4ed7844b960d80945c58' and F_DELTAG='0';/*累计司机接单*/
 select * from t_gt_dzorder  where F_CUSTOMNAME='P30' ORDER BY F_CREATETIME desc;
 select * from t_gt_driver where F_DRIVERNAME='无敌小飞侠';
