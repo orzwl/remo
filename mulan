@@ -39,4 +39,4 @@ select * from  t_gt_orderguide where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe
 select * from t_gt_bill where F_ORDERCODE='OB1603784926336940' order by F_BILLTIME desc;/*交易流水*/
 select * from t_gt_driver where F_DRIVERNAME='欧阳芳芳';/*司机*/
 select * from t_gt_bus WHERE F_BUSLICENSE='苏A1053D';/*车辆*/
-select * from t_gt_orderflowhistory where F_ORDERID='1212';
+select * from t_gt_orderflowhistory where F_ORDERID='1212-002';
