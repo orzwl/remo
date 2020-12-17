@@ -1,0 +1,42 @@
+select * from t_gt_dzorderevaluate where F_DRIVERID='e1cd0e13d12a4ed7844b960d80945c58';/*累计司机评价*/
+
+select * from t_gt_dzorder  where F_DRIVERID='e1cd0e13d12a4ed7844b960d80945c58' and F_DELTAG='0';/*累计司机接单*/
+select * from t_gt_dzorder  where F_CUSTOMNAME='P30' ORDER BY F_CREATETIME desc;
+select * from t_gt_driver where F_DRIVERNAME='无敌小飞侠';
+
+select * from t_gt_dzorderevaluate where F_GUIDEID='f7bb1c9627994d61b8baca33dae2b00a';/*累计导游评价*/
+SELECT AVG(F_GUIDELEAVEL) FROM t_gt_dzorderevaluate where F_GUIDEID='f7bb1c9627994d61b8baca33dae2b00a';/*导游平均分*/
+select * from t_gt_dzorder  where F_GUIDEID='f7bb1c9627994d61b8baca33dae2b00a' and F_DELTAG='0';/*累计导游接单*/
+select * from t_gt_dzguide where F_NAME='花木兰';
+
+select * from t_gt_dzbus WHERE F_BUSLICENSE='苏A3903D';
+select * from t_gt_dzorderevaluate where F_BUSID='0c8f0c96f94e4ce4bd9796911bcbda82';/*累计车辆评价*/
+SELECT AVG(F_BUSLEAVEL) FROM t_gt_dzorderevaluate where F_BUSID='0c8f0c96f94e4ce4bd9796911bcbda82';/*车辆平均分*/
+select * from t_gt_dzorder  where F_BUSID='0c8f0c96f94e4ce4bd9796911bcbda82' and F_DELTAG='0';/*累计车辆接单*/
+
+支付成功
+select * from t_gt_bcorder where F_CUSTOMNAME='p30' ORDER BY F_CREATETIME desc;
+select * from  t_gt_orderlog ORDER BY F_OPTIME desc;
+select * from  t_gt_bcsendbill where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*派单表*/
+select * from  t_gt_bcsendbill where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单驾驶员表*/
+select * from  t_gt_orderdriver where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单车辆表*/
+select * from  t_gt_orderbus where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单车辆表*/
+select * from  t_gt_orderguide where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单导游表*/
+select * from t_gt_bill where F_ORDERCODE='OB1603784926336940';/*交易流水*/
+select * from t_gt_driver where F_DRIVERNAME='欧阳芳芳';/*司机*/
+select * from t_gt_bus WHERE F_BUSLICENSE='苏A1053D';/*车辆*/
+select * from t_gt_orderflowhistory where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';
+select * from t_gt_bcorder  where F_ORDERCODE like'%1430';  
+
+退订成功
+select * from t_gt_bcorder where F_CUSTOMNAME='p30' ORDER BY F_CREATETIME desc;
+select * from  t_gt_orderlog ORDER BY F_OPTIME desc;
+select * from  t_gt_bcsendbill where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*派单表*/
+select * from  t_gt_bcsendbill where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单驾驶员表*/
+select * from  t_gt_orderdriver where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单车辆表*/
+select * from  t_gt_orderbus where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单车辆表*/
+select * from  t_gt_orderguide where F_ORDERID='1baffb73f8164304bc742a5fa59ecabe';/*订单导游表*/
+select * from t_gt_bill where F_ORDERCODE='OB1603784926336940' order by F_BILLTIME desc;/*交易流水*/
+select * from t_gt_driver where F_DRIVERNAME='欧阳芳芳';/*司机*/
+select * from t_gt_bus WHERE F_BUSLICENSE='苏A1053D';/*车辆*/
+select * from t_gt_orderflowhistory where F_ORDERID='1212-002';
