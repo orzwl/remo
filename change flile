@@ -11,6 +11,7 @@ select * from  t_gt_bill where F_ORDERcode='OZ1603871335625166' order by F_BILLT
 select * from t_gt_dzorder  where F_ORDERCODE like'%1430';
 select * from t_gt_orderlog  ORDER BY F_OPTIME desc;
 select * from t_gt_dzorder ORDER BY F_CREATETIME desc;
+select * from t_gt_dzorder c;
 
 游客下单
 select * from t_gt_dzorder ORDER BY F_CREATETIME desc;
